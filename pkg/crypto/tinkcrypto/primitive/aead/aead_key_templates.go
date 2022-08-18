@@ -7,10 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 package aead
 
 import (
-	"github.com/golang/protobuf/proto"
 	commonpb "github.com/google/tink/go/proto/common_go_proto"
 	hmacpb "github.com/google/tink/go/proto/hmac_go_proto"
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
+	"google.golang.org/protobuf/proto"
 
 	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
 	aescbcpb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/aes_cbc_go_proto"
@@ -23,10 +23,10 @@ import (
 
 // AES128CBCHMACSHA256KeyTemplate is a KeyTemplate that generates an AES-CBC-HMAC-AEAD key with the following
 // parameters:
-//  - AES key size: 16 bytes
-//  - HMAC key size: 16 bytes
-//  - HMAC tag size: 16 bytes
-//  - HMAC hash function: SHA256
+//   - AES key size: 16 bytes
+//   - HMAC key size: 16 bytes
+//   - HMAC tag size: 16 bytes
+//   - HMAC hash function: SHA256
 func AES128CBCHMACSHA256KeyTemplate() *tinkpb.KeyTemplate {
 	return createAESCBCHMACAEADKeyTemplate(subtle.AES128Size, subtle.AES128Size, subtle.AES128Size,
 		commonpb.HashType_SHA256)
@@ -34,10 +34,10 @@ func AES128CBCHMACSHA256KeyTemplate() *tinkpb.KeyTemplate {
 
 // AES192CBCHMACSHA384KeyTemplate is a KeyTemplate that generates an AES-CBC-HMAC-AEAD key with the following
 // parameters:
-//  - AES key size: 24 bytes
-//  - HMAC key size: 24 bytes
-//  - HMAC tag size: 24 bytes
-//  - HMAC hash function: SHA384
+//   - AES key size: 24 bytes
+//   - HMAC key size: 24 bytes
+//   - HMAC tag size: 24 bytes
+//   - HMAC hash function: SHA384
 func AES192CBCHMACSHA384KeyTemplate() *tinkpb.KeyTemplate {
 	return createAESCBCHMACAEADKeyTemplate(subtle.AES192Size, subtle.AES192Size, subtle.AES192Size,
 		commonpb.HashType_SHA384)
@@ -45,10 +45,10 @@ func AES192CBCHMACSHA384KeyTemplate() *tinkpb.KeyTemplate {
 
 // AES256CBCHMACSHA384KeyTemplate is a KeyTemplate that generates an AES-CBC-HMAC-AEAD key with the following
 // parameters:
-//  - AES key size: 32 bytes
-//  - HMAC key size: 24 bytes
-//  - HMAC tag size: 24 bytes
-//  - HMAC hash function: SHA384
+//   - AES key size: 32 bytes
+//   - HMAC key size: 24 bytes
+//   - HMAC tag size: 24 bytes
+//   - HMAC hash function: SHA384
 func AES256CBCHMACSHA384KeyTemplate() *tinkpb.KeyTemplate {
 	return createAESCBCHMACAEADKeyTemplate(subtle.AES256Size, subtle.AES192Size, subtle.AES192Size,
 		commonpb.HashType_SHA384)
@@ -56,10 +56,10 @@ func AES256CBCHMACSHA384KeyTemplate() *tinkpb.KeyTemplate {
 
 // AES256CBCHMACSHA512KeyTemplate is a KeyTemplate that generates an AES-CBC-HMAC-AEAD key with the following
 // parameters:
-//  - AES key size: 32 bytes
-//  - HMAC key size: 32 bytes
-//  - HMAC tag size: 32 bytes
-//  - HMAC hash function: SHA512
+//   - AES key size: 32 bytes
+//   - HMAC key size: 32 bytes
+//   - HMAC tag size: 32 bytes
+//   - HMAC hash function: SHA512
 func AES256CBCHMACSHA512KeyTemplate() *tinkpb.KeyTemplate {
 	return createAESCBCHMACAEADKeyTemplate(subtle.AES256Size, subtle.AES256Size, subtle.AES256Size,
 		commonpb.HashType_SHA512)

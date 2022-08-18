@@ -14,13 +14,13 @@ import (
 	"io"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
 	tinkaead "github.com/google/tink/go/aead"
 	hybrid "github.com/google/tink/go/hybrid/subtle"
 	"github.com/google/tink/go/insecurecleartextkeyset"
 	"github.com/google/tink/go/keyset"
 	commonpb "github.com/google/tink/go/proto/common_go_proto"
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
+	"google.golang.org/protobuf/proto"
 
 	cryptoapi "github.com/hyperledger/aries-framework-go/pkg/crypto"
 	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"

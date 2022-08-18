@@ -10,7 +10,6 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
 	"github.com/google/tink/go/core/cryptofmt"
 	"github.com/google/tink/go/core/primitiveset"
 	"github.com/google/tink/go/keyset"
@@ -22,6 +21,7 @@ import (
 	"github.com/google/tink/go/testutil"
 	"github.com/google/tink/go/tink"
 	"github.com/stretchr/testify/require"
+	"google.golang.org/protobuf/proto"
 
 	"github.com/hyperledger/aries-framework-go/pkg/crypto/primitive/bbs12381g2pub"
 	"github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/bbs/api"

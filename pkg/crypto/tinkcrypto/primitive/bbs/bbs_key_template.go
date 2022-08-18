@@ -7,9 +7,9 @@ SPDX-License-Identifier: Apache-2.0
 package bbs
 
 import (
-	"github.com/golang/protobuf/proto"
 	commonpb "github.com/google/tink/go/proto/common_go_proto"
 	tinkpb "github.com/google/tink/go/proto/tink_go_proto"
+	"google.golang.org/protobuf/proto"
 
 	bbspb "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/proto/bbs_go_proto"
 )

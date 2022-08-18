@@ -12,7 +12,6 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
 	"github.com/google/tink/go/aead"
 	subtleaead "github.com/google/tink/go/aead/subtle"
 	"github.com/google/tink/go/mac"
@@ -22,6 +21,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/crypto/poly1305"
+	"google.golang.org/protobuf/proto"
 
 	cbchmacaead "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead"
 	subtlecbchmacaead "github.com/hyperledger/aries-framework-go/pkg/crypto/tinkcrypto/primitive/aead/subtle"
